@@ -1,0 +1,650 @@
+@font-face{
+    font-family: Domaine; 
+    /* Apni marzi se koi bhi naam */
+    src: url(./Fonts/5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 110vh; 
+    /* 100% isliye nhi di kyunki parent ki height set nhi ki h hmne */
+    width: 100vw;
+    background: #C4BCB3;
+    /* Picked up by the extension ColorZilla */
+    position: relative;
+    overflow: hidden;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+
+#nav img{
+    height: 35px;
+    width: 30%;
+}
+
+#nav h5{
+    font-size: 30px;
+    font-weight: 100;
+    width: 30%;
+}
+
+#nav i{
+    width: 30%;
+    text-align: right;
+    font-size: 40px;
+}
+
+#elems{
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+
+#elem1 h4{
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+    /* Go to the website -> inspect -> network -> click on font -> refresh pg -> double click to download fonts -> woff2 format to ttf convert -> rename, install and use it directly here */
+}
+
+#elem1 h4 span{
+    background-color: #B73C12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+#elem1 p{
+    font-size: 25px;
+    /* margin-top: 10px; */
+    font-weight: 100;
+    color: #656565;
+    font-family: Domaine;
+    /* Imported above at the top */
+}
+
+#elem2{
+    width: 30%;
+    height: 100%;
+    padding: 20px 60px;
+    border-left: 2px solid #acacac;
+    border-right: 2px solid #acacac;
+    text-align: center;
+}
+
+#elem2 h2{
+    font-family: Canopee;
+    font-size: 90px;
+    font-weight: 100;
+}
+
+#elem2 h3{
+    font-family: Domaine;
+    font-size: 40px;
+    font-weight: 75;
+    color: #2f2f2f;
+    margin: 10px 0;
+}
+
+#elem2 h6{
+    font-family: Domaine;
+    font-size: 30px;
+    font-weight: 75;
+    color: #2f2f2f;
+}
+
+#elem3{
+    width: 30%;
+    height: 100%;
+    
+}
+
+#elem3 h4{
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+}
+
+#elem3 h4 span{
+    background-color: #B73C12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+#elem3 p{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+    color: #656565;
+    font-family: Domaine;
+}
+
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    /* Ye agr nhi lgaya toh jb img scale hogi toh div se bahar nikalne lgegi */
+}
+
+#image-div:hover img{
+    scale: 1.1;
+}
+
+#page1 h1{
+    font-size: 740px;
+    letter-spacing: -5px;
+    font-weight: 100;
+    font-family: Canopee;
+    background-color: #1C1C1A;
+    color: #C4BCB3;
+    width: 96%;
+    line-height: 570px;
+    margin-left: 2%;
+}
+
+#page2{
+    height: 150vh;
+    width: 100%;
+    background-color: #c4bcb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 40px;
+}
+
+#page2-left{
+    height: 100%;
+    padding-right: 50px;
+    width: 40%;
+    border-right: 1px solid #4b4b4b ;
+}
+
+#page2-left h2{
+    font-size: 150px;
+    font-family: Canopee;
+    text-align: center;
+    line-height: 150px;
+    font-weight: 100;
+}
+
+#page2-left h2 span{
+    font-size: 210px;
+    font-weight: 900;
+}
+
+#page2-left img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-left #paragraph{
+    display: flex;
+    margin-top: 20px;
+}
+
+#page2-left #paragraph p{
+    font-size: 40px;
+    font-family: Domaine;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+#page2-left  p{
+    font-size: 42px;
+    font-family: Domaine;
+    color: #2f2f2f;
+    margin-top: 10px;
+}
+
+#page2-left p::first-letter{
+    color: #C4BCB3;
+    background-color: #2f2f2f;
+    margin-top: 15px;
+    font-size: 110px;
+    font-weight: 400;
+    float: left;
+    margin-right: 10px;
+}
+
+#page2-right{
+    height: 100%;
+    width: 60%;
+    padding: 0 50px;
+}
+
+#page2-right img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-right h1{
+    font-family: Canopee;
+    font-size: 120px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#page3{
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #c4bcb3;
+}
+
+#page3 h1{
+    font-size: 610px;
+    font-weight: 100;
+    background-color: #1c1c19;
+    width: fit-content;
+    margin-left: 2%;
+    padding: 0 20px;
+    line-height: 500px;
+    color: #c4bcb3;
+    font-family: Canopee;
+}
+
+#page3 img{
+    height: 450px;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c4bcb3;
+}
+
+#page4-left{
+    width: 65%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page4-right{
+    width: 35%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-right h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 110px;
+    letter-spacing: -12px;
+    font-weight: 300;
+}
+
+#page4-right p{
+    font-size: 34px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #4b4b4b;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+
+#page4-right #gola{
+    height: 250px;
+    background-color: #B8B0A6;
+    border: 1px solid #C2B8AE;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#gola h1{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: Canopee;
+    margin-top: 30px;
+    letter-spacing: -2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-24%);
+    transition: all ease 0.6s;
+}
+
+#gola img{
+    height: 60px;
+    transform: translateX(-120%);
+    transition: all ease 0.6s;
+}
+
+#gola:hover img{
+    transform: translateX(95%);
+}
+
+#gola:hover h1{
+    transform: translateX(140%);
+}
+
+#page5{
+    height: 25vh;
+    width: 100%;
+    background-color: #C4BCB3;
+    border: 1px solid #2f2f2f;
+    padding: 20px;
+    display: flex;
+}
+
+#page5 #box{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    font-family: Domaine;
+}
+
+#page5 #box #contain{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: right;
+    margin: 20px 0;
+}
+
+#page5 #box p{
+    font-size: 50px;
+}
+
+#page5 #box h3{
+    font-size: 80px;
+    font-weight: 650;
+}
+
+#page5 #box #num{
+    vertical-align: center;
+    font-size: 170px;
+    margin-left: 40px;
+}
+
+#page5 .box4{
+    margin-right: 60px;
+}
+
+#page6-top{
+    height: 110vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    display: flex;
+    padding: 50px;
+}
+
+#page6 #page6-left{
+    width: 56%;
+    height: 100%;
+    margin-right: 100px;
+}
+
+#page6-left #part{
+    display: flex;   
+}
+
+#page6-left img{
+   margin-top: 29px;
+   object-fit: cover;
+   height: 41vh;
+   width: 30vh;
+}
+
+#page6-left h1{
+    font-size: 582px;
+    font-weight: 400;
+    letter-spacing: -10px;
+    font-family: Domaine;
+    margin-top: 0;
+    line-height: 480px;
+}
+
+#page6 #page6-right{
+    width: 38%;
+    height: 100%;
+}
+
+#page6-right img{
+    margin-top: 29px;
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+}
+
+#page6-bottom{
+    height: 90vh;
+    width: 100%;
+    background-color: #c4bcb3;
+    padding: 0 50px;
+}
+
+#page6-bottom img{
+    float: left;
+    margin-right: 30px;
+    height: 44%;
+    width: 20%;
+    object-fit: cover;
+}
+
+#page6-bottom h1{
+    font-size: 530px;
+    font-weight: 400;
+    letter-spacing: -25px;
+    font-family: Domaine;
+    line-height: 370px;
+}
+
+#page6-bottom #part{
+    margin: 100px 0;
+    display: flex;
+}
+
+#page6-bottom #part h1{
+    color: #c4bcb3;
+    background-color: black;
+    width: 68%;
+    font-size: 450px;
+    font-weight: 100;
+    letter-spacing: -25px;
+}
+
+#page6-bottom #part p{
+    width: 37%;
+    margin-left: 50px;
+    font-family: Domaine;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#page7{
+    height: 65vh;
+    width: 100%;
+    background-color: #c4bcb3;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+#page7 #card{
+    width: 40%;
+    height: 85%;
+    margin: 50px;
+    border: 4px solid #2f2f2f;
+    outline: 4px dashed #2f2f2f;
+    outline-offset: -30px;
+    border-radius: 2.2rem;
+    box-shadow: #1C1C1A 10px;
+    position: relative;
+    padding: 40px;
+    background-color: #c4bcb3;
+    transition-duration: 1.2s;
+}
+
+/* Dosn't apply on the 1st card */
+#page7 #card:not(:first-child){
+    margin-left: -530px;
+}
+
+#page7 #card:hover{
+    background-color: #B5ACA0;
+}
+
+#page7 #card:hover ~ #card{
+    /* ~ selects the rest of the cards on the right */
+    transform: translateX(430px);
+}
+
+#page7 #card p{
+    font-size: 30px;
+    margin: 25px;
+}
+
+#page7 #card img{
+    border-radius: 50%;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 55px;
+    float: left;
+}
+
+#page7 #card h6{
+    font-size: 30px;
+    font-family: Domaine;
+    position: absolute;
+    bottom: 108px;
+    left: 180px;
+}
+
+#page7 #card #designation{
+    position: absolute;
+    bottom: 45px;
+    left: 155px;
+    font-size: 28px;
+    font-family: Domaine;
+}
+
+#page8{
+    padding: 30px 0;
+    width: 100%;
+    background-color: #c4bcb3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page8::-webkit-scrollbar{
+    display: none;
+}
+
+#page8 h1{
+    font-size: 100px;
+    font-family: Domaine;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 20px;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#page8 h1 span{
+    font-family: Canopee;
+    background-color: #1b1b1b;
+    color: #c4bcb3;
+    padding: 0 12px;
+}
+
+#page9{
+    height: 100px;
+    width: 100%;
+    background-color: #c4bcb3;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100%));
+        /* 34 bcoz 3opx margin and 4px gap (already there) between the headings */
+    }
+}
+
+#page8:hover h1{
+    animation-play-state: paused;
+}
